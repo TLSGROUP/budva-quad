@@ -1,5 +1,6 @@
 'use client'
-
+import LanguageSwitcher from '@/components/LanguageSwitcher'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -13,6 +14,7 @@ export default function Header () {
 	const toggleMenu = () => {
 		setIsMenuOpen((prev) => !prev);
 	};
+	const t = useTranslations()
 	
 		return (
 			<header
@@ -20,22 +22,19 @@ export default function Header () {
 				<Image src='/1.svg' alt='logo' width={60} height={30} />
 				<nav className='hidden sm:flex  text-white gap-x-3 '>
 					<Link href='/' id='home'
-					      className='hover:text-yellow-500 transition-all duration-300'>home</Link>
+					      className='hover:text-yellow-500 transition-all duration-300'>{t('home')}</Link>
 					<Link href='#price' id='Price'
-					      className='hover:text-yellow-500 transition-all duration-300'>price</Link>
+					      className='hover:text-yellow-500 transition-all duration-300'>{t('price')}</Link>
 					<Link href='#gallery' id='Gallery'
-					      className='hover:text-yellow-500 transition-all duration-300'>gallery</Link>
+					      className='hover:text-yellow-500 transition-all duration-300'>{t('gallery')}</Link>
 					<Link href='#about' id='About'
-					      className='hover:text-yellow-500 transition-all duration-300'>about</Link>
+					      className='hover:text-yellow-500 transition-all duration-300'>{t('about')}</Link>
 				</nav>
-				<select>
-					<option value='en'>EN</option>
-					<option value='sr'>SR</option>
-					<option value='ru'>RU</option>
-				</select>
+				<LanguageSwitcher />
+				
 				{/*Бургер-меню */}
 				<div className='flex md:hidden'>
-					<button onClick={toggleMenu} className="text-white">
+					<button onClick={toggleMenu} className=" text-white">
 						{isMenuOpen ? (
 							<svg className="w-6 h-6" fill="none" stroke="currentColor"
 							     viewBox="0 0 24 24">
@@ -58,16 +57,14 @@ export default function Header () {
 						className="absolute top-20 left-0 w-full flex flex-col  items-center bg-gradient-to-b from-[#11111000] to-black/60 bg-opacity-85 text-white py-4">
 						<ul className='space-y-2  text-center'>
 							<li><Link href='/' id='home'
-							          className='hover:text-yellow-500 transition-all duration-300'>Home</Link></li>
+							          className='hover:text-yellow-500 transition-all duration-300'>{t('home')}</Link></li>
 							<li><Link href='#price' id='Price'
-							          className='hover:text-yellow-500 transition-all duration-300'>Price</Link></li>
-							{/* ?????????????? */}
+							          className='hover:text-yellow-500 transition-all duration-300'>{t('price')}</Link></li>
 							<li><Link href='#gallery' id='Gallery'
-							          className='hover:text-yellow-500 transition-all duration-300'>Gallery</Link>
+							          className='hover:text-yellow-500 transition-all duration-300'>{t('gallery')}</Link>
 							</li>
-							{/* ???????????????? */}
 							<li><Link href='#about' id='About'
-							          className='hover:text-yellow-500 transition-all duration-300'>About</Link>
+							          className='hover:text-yellow-500 transition-all duration-300'>{t('about')}</Link>
 							</li>
 						</ul>
 					</div>

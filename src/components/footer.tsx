@@ -1,14 +1,16 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export default function Footer () {
+	const t = useTranslations()
 	return (
 		<footer
 			className=' bg-[url(/wave.svg)] bg-no-repeat  bg-bottom bg-cover pt-10 pb-10 bg-[#DADEDF] text-xl text-white '>
 			
 			<div className='text-center mx-auto'>
 				<h2
-					className='tracking-widest text-[#333333] text-4xl mb-10'>Contacts:</h2>
+					className='tracking-widest text-[#333333] text-4xl mb-10'>{t('contacts')}</h2>
 				<span className='tracking-widest text-[#333333] text-3xl'>Budva Quad Adventures</span>
 			</div>
 			<div

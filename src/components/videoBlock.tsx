@@ -1,7 +1,9 @@
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import React from 'react'
 
 export default function BlockVideo () {
+	const t = useTranslations()
 	return (
 		<section className='relative  min-h-screen w-full'>
 			<video src='/bgVideo.MP4' autoPlay
@@ -17,7 +19,7 @@ export default function BlockVideo () {
 				<a
 					href='https://wa.me/38268322923?text=Hello%2C%20I%20am%20interested%20in%20your%20services'
 					className=" absolute flex gap-x-3 justify-center items-center sm:left-1 md:left-10 lg:left-10  bottom-36 text-white bg-gray-900/75 shadow-lg shadow-gray-900 p-5 rounded-3xl text-4xl tracking-widest font-bold hover:bg-yellow-500 hover:shadow-lg hover:shadow-yellow-400 transition-all duration-300">
-					Contact
+					{t('contact')}
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 					     fill="currentColor" className="w-10 h-10 ml-5">
 						<path fillRule="evenodd"

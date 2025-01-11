@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl'
 import React, { useRef } from 'react'
 
 export default function OurPrice () {
@@ -34,6 +35,8 @@ export default function OurPrice () {
 			document.body.classList.remove('blurred');
 		}
 	};
+	const t = useTranslations()
+	
 	
 	return (
 		<section id="price" className="min-h-screen w-full pt-10 bg-[#DADEDF]">
@@ -47,20 +50,17 @@ export default function OurPrice () {
 							className='font-geologica w-full sm:max-w-lg bg-[#ECECE2] flex flex-col justify-between items-center p-6 gap-y-3 rounded-lg shadow-lg h-auto'>
 							<h2 className='font-bold text-[#333] text-xl text-center'>
 								<span
-									className='text-2xl text-yellow-500'>The Small Tour 2h</span> (70€
-								Driver + 30€ Passenger)
+									className='text-2xl text-yellow-500'>{t('theSmallTourH2')}</span>{t('theSmallTourS')}
 							</h2>
 							<h2 className='font-bold text-[#333] text-xl text-center'>
-								Budva Center - Jazz Beach - Trsteno Beach - Ploče Beach - The
-								National Restaurant Carević - Church St. George - Glavati -
-								Church St. Ilija - Krapina - Budva Center
+								{t('routeSmall')}
 							</h2>
 							<button
 								onClick={openDialog}
 								type='button'
 								className='bg-[#756C63] text-white text-2xl font-bold rounded-full p-4 mt-4 hover:bg-[#5E564D] shadow-[0px_4px_0px_#5E564D] hover:shadow-[0px_2px_0px_#5E564D] hover:translate-y-[2px] duration-200'
 							>
-								Book now
+								{t('bookNow')}
 							</button>
 							<dialog ref={dialogRef}
 							        className=' rounded-3xl w-max  p-10 text-center  sm:mx-auto xs:w-full bg-[#FAF3E0] md:w-[900px]'
@@ -74,60 +74,16 @@ export default function OurPrice () {
 								        
 							        }}>
 								<div className='text-[#333]  '>
-									<h2 className='text-3xl font-bold text-yellow-400'>The Small
-										Tour 2h</h2>
+									<h2 className='text-3xl font-bold text-yellow-400'>{t('theSmallTourH2')}</h2>
 									<div
 										className='flex flex-col text-[#666666]'>
-										<p>
-											Dear our adventurers, Welcome to our short quad biking
-											tour
-											-
-											the ideal way to enjoy nature, explore beauty, and
-											experience
-											the thrill of adrenaline while discovering unforgettable
-											landscapes and breathtaking views!
-										</p>
-										<p>
-											Let`s embark on this unforgettable adventure: Our
-											adventure
-											starts from the center of Budva, prepared for the
-											unforgettable experience that awaits us.
-										</p>
-										<p>
-											First, we`ll visit Jaz beach, where you`ll have the
-											opportunity for photography and creating memories to
-											cherish
-											forever. After that, we continue our journey towards the
-											beautiful beaches of Trsteno and Ploče, where you`ll
-											also
-											have
-											the chance for photography and enjoying the tranquility
-											of
-											nature.
-										</p>
-										<p>
-											Next, we`ll visit the famous national restaurant
-											Carević,
-											offering a perfect view for relaxation and refreshing
-											drinks.
-											We continue our route through the village called
-											Glavati,
-											which also offers spectacular views, all the way to a
-											Montenegrin restaurant with a waterfall, where we`ll
-											stop to
-											further enjoy.
-										</p>
-										<p>Finally, we return back to Budva,
-											now with even more beautiful views of the city, and
-											along
-											the way, children will have the opportunity to play and
-											enjoy themselves.</p>
-										<p>This short tour is perfect for
-											those who want to explore nature, enjoy beautiful
-											landscapes, and feel the excitement of quad biking.</p>
-										<p>See you on the road!
-											Warm regards,
-											Your team for quad biking adventures.</p>
+										<p>{t('pS1')}</p>
+										<p>{t('pS2')}</p>
+										<p>{t('pS3')}</p>
+										<p>{t('pS4')}</p>
+										<p>{t('pS5')}</p>
+										<p>{t('pS6')}</p>
+										<p>{t('pS7')}</p>
 										
 										<a
 											href='https://wa.me/38268322923?text=Hello%2C%20I%20am%20interested%20in%20the%20Small%20Tour'
@@ -149,7 +105,7 @@ export default function OurPrice () {
 											onClick={closeDialog}
 											type='button'
 											className=' px-5 py-2 mx-auto w-auto mb-0 mt-5 text-2xl font-bold text-white bg-[#756C63] hover:bg-[#5E564D]  rounded-[30px]  shadow-[0px_2px_0px_0.5px_rgba(186, 159, 140, 1)] hover:translate-y-[2px] hover:shadow-lg focus:outline-none focus:ring-0  focus:ring-offset-0'>
-											Close
+											{t('btnTour')}
 										</button>
 									</div>
 								
@@ -162,20 +118,17 @@ export default function OurPrice () {
 							className="font-geologica w-full sm:max-w-lg bg-[#ECECE2] flex flex-col justify-center items-center gap-y-3 p-6 rounded-lg shadow-lg">
 							<h2 className="font-bold text-[#333] text-xl text-center">
 								<span
-									className="text-2xl text-yellow-500">The Grand Tour 4h</span> (130€
-								Driver + 50€ Passenger)
+									className="text-2xl text-yellow-500">{t('theGrandTour')}</span> {t('theGrandTourS')}
 							</h2>
 							<h2 className="font-bold text-[#333] text-xl text-center">
-								Budva Center - Jazz Beach - Ploče Beach - Church St. George -
-								Kubasi - Bigova - Luštica Bay - Fortress Gorazda - Church St.
-								Ilija - Krapina - Budva Center
+								{t('routeGrand')}
 							</h2>
 							<button
 								onClick={openDialog2}
 								type="button"
 								className="bg-[#756C63] text-white text-2xl font-bold rounded-full p-4 mt-4 hover:bg-[#5E564D] shadow-[0px_4px_0px_#5E564D] hover:shadow-[0px_2px_0px_#5E564D] hover:translate-y-[2px] duration-200"
 							>
-								Book now
+								{t('bookNow')}
 							</button>
 							<dialog ref={dialogRef2}
 							        className=' rounded-3xl w-max  p-10 text-center  sm:mx-auto xs:w-full bg-[#FAF3E0] md:w-[900px]'
@@ -189,73 +142,18 @@ export default function OurPrice () {
 								        
 							        }}>
 								<div className='text-[#333]  '>
-									<h2 className='text-3xl font-bold text-yellow-400'>Small Tour
-										4h</h2>
+									<h2 className='text-3xl font-bold text-yellow-400'>{t('theGrandTour')}</h2>
 									<div
 										className='flex flex-col text-[#666666]'>
-										<p>Dear our dear adventurers,
-											Excitement reaches its peak as we present to you our
-											extraordinary big quad biking tour that will take you on
-											an
-											unforgettable journey through spectacular landscapes and
-											extraordinary adventures!
-											Get ready for something that will leave you breathless!
-											Departure from the heart of Budva! </p>
-										<p>Our adventure begins right here, in
-											the heart of this enchanting city, ready to explore the
-											wilderness that awaits us together!
-											We kick off our adventure by visiting three heavenly
-											beaches: Jaz, Trsteno, and Ploče! These oases of peace
-											and
-											beauty will give you the opportunity to pause, take a
-											deep
-											breath, and forever capture a moment in your camera and
-											in
-											your heart!
-											And then, an exciting ride takes us to the magical
-											Bigova! </p>
-										<p>Here we`ll stop to refresh
-											ourselves and enjoy a refreshing swim, surrounded by the
-											enchanting scents of flowers and the forest. Without
-											stopping, we continue towards Luštica, a magical place
-											known
-											for its beauty and breathtaking landscapes!
-											Here we`ll stop to catch our breath and create
-											unforgettable
-											memories that will last a lifetime!
-											Our adventure culminates with a visit to the Gorazda
-											fortress above Kotor!
-											Built during the Austro-Hungarian Monarchy in 1885, this
-											fortress offers spectacular views of the coastal beauty
-											that
-											will take your breath away! </p>
-										<p>Our return to Budva takes us
-											through wooded landscapes to one of the most beautiful
-											churches - the Church of St. Elijah. Here we`ll stop to
-											feel
-											the spirit of the past and enjoy the silence of
-											nature. </p>
-										<p>o conclude this unforgettable
-											adventure, we`ll visit an authentic Montenegrin
-											restaurant
-											that exudes the spirit of nature. The route to the
-											restaurant is full of surprises, and the waterfall that
-											greets us will further enrich our experience!</p>
-										<p> Finally, we return to Budva via an
-											asphalt road, providing you with a beautiful view of the
-											city as we descend down the road.
-											This ride will fill you with adrenaline and delight you
-											with
-											the charms of nature! </p>
-										<p>This tour is more than just a
-											journey - it`s an experience that will inspire you,
-											empower
-											you, and leave you breathless!
-											Get ready for the unforgettable adventure that awaits
-											you! </p>
-										<p>See you on the road!
-											Warm regards,
-											Your team for quad biking adventures.</p>
+										<p> {t('pG1')}</p>
+										<p> {t('pG2')}</p>
+										<p> {t('pG3')}</p>
+										<p> {t('pG4')}</p>
+										<p> {t('pG5')}</p>
+										<p> {t('pG6')}</p>
+										<p> {t('pG7')}</p>
+										<p> {t('pG8')}</p>
+										
 										<a
 											href='https://wa.me/38268322923?text=Hello%2C%20I%20am%20interested%20in%20the%20Graund%20Tour%20'
 											className='flex justify-center text-white px-3 text-3xl items-center gap-x-3 mt-5  font-geologica bg-green-600 font-bold rounded-3xl p-2 shadow-[0px_4px_0px_#00a900] hover:translate-y-1 hover:shadow-[0px_2px_0px_#92b212] active:translate-y-2 active:shadow-none transition-all duration-300 w-auto mx-auto'>WhatsApp
@@ -276,7 +174,7 @@ export default function OurPrice () {
 											onClick={closeDialog2}
 											type='button'
 											className=' px-5 py-2 mx-auto w-auto mb-0 mt-5 text-2xl font-bold text-white bg-[#756C63] hover:bg-[#5E564D]  rounded-[30px]  shadow-[0px_2px_0px_0.5px_rgba(186, 159, 140, 1)] hover:translate-y-[2px] hover:shadow-lg focus:outline-none focus:ring-0  focus:ring-offset-0'>
-											Close
+											{t('btnTour')}
 										</button>
 									</div>
 								</div>
