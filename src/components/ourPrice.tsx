@@ -41,7 +41,7 @@ export default function OurPrice () {
 	return (
 		<section id="price" className="min-h-screen w-full pt-10 bg-[#DADEDF]">
 			<div className="flex flex-col flex-wrap justify-center max-w-screen-xl mx-auto pt-10 px-2 sm:px-5">
-				<h2 className="mx-auto text-5xl text-[#333333] mb-5">Our Price</h2>
+				<h2 className="mx-auto text-5xl text-[#333333] mb-5">{t('ourPrice')}</h2>
 				<div className="flex flex-col justify-center shadow-xl shadow-[#FAF3E0] items-center min-h-screen bg-[url(/IMG_3334.jpg)] bg-no-repeat bg-center bg-cover rounded-3xl">
 					<div
 						className="flex flex-col sm:flex-col md:flex-row justify-center gap-8 pt-20 w-full max-w-screen-xl p-4">
