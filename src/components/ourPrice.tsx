@@ -175,7 +175,7 @@ export default function OurPrice() {
                     <p> {t("pG8")}</p>
 
                     <a
-                      href="https://wa.me/38268322923?text=Hello%2C%20I%20am%20interested%20in%20the%20Graund%20Tour%20"
+                      href="https://wa.me/38268322923?text=Hello%2C%20I%20am%20interested%20in%20the%20Grand%20Tour%20"
                       className="flex justify-center text-white px-3 text-3xl items-center gap-x-3 mt-5  font-geologica bg-green-600 font-bold rounded-3xl p-2 shadow-[0px_4px_0px_#00a900] hover:translate-y-1 hover:shadow-[0px_2px_0px_#92b212] active:translate-y-2 active:shadow-none transition-all duration-300 w-auto mx-auto"
                     >
                       WhatsApp
