@@ -33,7 +33,7 @@ export default function Description () {
 					<button
 						onClick={openDialog3}
 						type="button"
-						className="bg-[#756C63] text-white text-2xl font-bold rounded-full p-4 mt-4 hover:bg-[#5E564D] shadow-[0px_4px_0px_#5E564D] hover:shadow-[0px_2px_0px_#5E564D] hover:translate-y-[2px] duration-200"
+						className="bg-[#756C63] font-geologica text-white text-2xl font-bold rounded-full p-4 mt-4 hover:bg-[#5E564D] shadow-[0px_4px_0px_#5E564D] hover:shadow-[0px_2px_0px_#5E564D] hover:translate-y-[2px] duration-200"
 					>
 						{t("btnRules")}
 					</button>
