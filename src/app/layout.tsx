@@ -1,24 +1,45 @@
-import { Metadata } from 'next'
-import { NextIntlClientProvider } from 'next-intl'
-import { getLocale, getMessages } from 'next-intl/server'
-import './globals.css'
+import { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import "./globals.css";
+import React from "react";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
-    default : "BUDVA QUAD ADVENTURES",
-    template : "%s - BUDVA QUAD ADVENTURES"
+    default: "BUDVA QUAD ADVENTURES",
+    template: "%s - BUDVA QUAD ADVENTURES",
   },
   description:
     "Unleash your adventurous spirit with Budva Quad Adventures! Explore breathtaking landscapes, rugged trails, and hidden gems of Montenegro on an unforgettable quad ride.",
-  keywords: ["budva quad adventures", "quad ride", "montenegro", "landscapes", "rugged trails", "hidden gems", "budva quad", "budva", "rider", "drive", "drive quad", "avt", "rocks", 'quad biking', 'adventures', ],
+  keywords: [
+    "budva quad adventures",
+    "atv budva tour",
+    "budva tour",
+    "quad ride",
+    "montenegro",
+    "landscapes",
+    "rugged trails",
+    "hidden gems",
+    "budva quad",
+    "budva",
+    "rider",
+    "drive",
+    "drive quad",
+    "atv",
+    "rocks",
+    "quad biking",
+    "adventures",
+  ],
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.budvaquad.me/',
-    siteName: 'Budva Quad Adventures',
+    type: "website",
+    locale: "en_US",
+    url: "https://www.budvaquad.me/",
+    siteName: "Budva Quad Adventures",
   },
 };
 
@@ -35,6 +56,8 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
+          <Analytics />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
