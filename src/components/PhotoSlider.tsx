@@ -18,45 +18,45 @@ export default function PhotoSlider() {
 					align: "start",
 					loop: true,
 				}}>
-					<CarouselContent className="-ml-2 md:-ml-4 ">
-						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 ">
-							<img src="/IMG_3306.JPG" />
+					<CarouselContent className="-ml-2 md:-ml-4">
+						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+							<img src="/IMG_3306.JPG" alt="ATV adventure in Budva through scenic trails" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3307.JPG" />
+							<img src="/IMG_3307.JPG" alt="Exploring off-road paths on an ATV near Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3308.JPG" />
+							<img src="/IMG_3308.JPG" alt="ATV ride overlooking the stunning landscapes of Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3312.JPG" />
+							<img src="/IMG_3312.JPG" alt="Taking a break during the Budva ATV tour" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3313.JPG" />
-						</CarouselItem>
-						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 ">
-							<img src="/IMG_3314.JPG" />
+							<img src="/IMG_3313.JPG" alt="Riding ATVs through rocky terrain in Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3315.JPG" />
+							<img src="/IMG_3314.JPG" alt="Adventuring through nature trails on an ATV in Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3325.JPG" />
+							<img src="/IMG_3315.JPG" alt="Breathtaking views captured during the ATV tour in Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3327.JPG" />
+							<img src="/IMG_3325.JPG" alt="ATV riders enjoying the journey in Budva's wilderness" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3332.JPG" />
+							<img src="/IMG_3327.JPG" alt="Group of ATVs navigating challenging paths in Budva" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3343.JPG" />
-						</CarouselItem>
-						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 ">
-							<img src="/IMG_3344.JPG" />
+							<img src="/IMG_3332.JPG" alt="Exploring Budva's rugged trails on an ATV ride" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<img src="/IMG_3347.JPG" />
+							<img src="/IMG_3343.JPG" alt="Adventurous ATV trip through Budva's hills" />
+						</CarouselItem>
+						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+							<img src="/IMG_3344.JPG" alt="Capturing the essence of an ATV adventure in Budva" />
+						</CarouselItem>
+						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+							<img src="/IMG_3347.JPG" alt="End of a thrilling ATV ride in Budva" />
 						</CarouselItem>
 					</CarouselContent>
 					{/* Кнопки переключения карусели */}
