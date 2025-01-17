@@ -90,7 +90,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.budvaquad.me/",
-    siteName: "Budva Quad Adventures",
+    siteName: "ATV/Budva Quad Adventures",
     images: [
       {
         url: "https://www.budvaquad.me/opengraph-image.png",
