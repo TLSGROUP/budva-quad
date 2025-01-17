@@ -8,7 +8,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: {
-    default: "BUDVA QUAD ADVENTURES",
+    default: "ATV/BUDVA QUAD ADVENTURES",
     template: "%s - BUDVA QUAD ADVENTURES",
   },
   description:
