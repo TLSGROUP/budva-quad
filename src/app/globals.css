@@ -28,6 +28,16 @@ dialog {
   filter: none;
   pointer-events: auto; /* Включаем взаимодействие с модальным окном */
 }
+
+.rules-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.rules-dialog[open]) {
+  overflow: hidden;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
