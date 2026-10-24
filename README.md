@@ -30,6 +30,12 @@ Social preview URLs use `https://www.budvaquad.me` as their metadata base.
 Vercel Analytics and Speed Insights load only when `VERCEL=1`, so local and
 self-hosted runs do not request unavailable Vercel endpoints.
 
+The gallery uses 1536 x 2048 WebP derivatives in `public/gallery` for
+`IMG_3325.JPG` and `IMG_3327.JPG`. Their 16320-pixel originals exceed Vercel's
+8192-pixel source-image limit and would otherwise be served without resizing.
+The derivatives retain the full frame and apply EXIF orientation; the originals
+remain available in `public`.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

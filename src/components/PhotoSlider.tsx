@@ -42,10 +42,10 @@ export default function PhotoSlider() {
 							<Image src="/IMG_3315.JPG" alt="Breathtaking views captured during the ATV tour in Budva" width={1536} height={2048} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<Image src="/IMG_3325.JPG" alt="ATV riders enjoying the journey in Budva's wilderness" width={12240} height={16320} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
+							<Image src="/gallery/IMG_3325.webp" alt="ATV riders enjoying the journey in Budva's wilderness" width={1536} height={2048} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-							<Image src="/IMG_3327.JPG" alt="Group of ATVs navigating challenging paths in Budva" width={12240} height={16320} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
+							<Image src="/gallery/IMG_3327.webp" alt="Group of ATVs navigating challenging paths in Budva" width={1536} height={2048} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
 						</CarouselItem>
 						<CarouselItem className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
 							<Image src="/IMG_3332.JPG" alt="Exploring Budva's rugged trails on an ATV ride" width={3060} height={4080} sizes="(min-width: 1280px) 400px, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw" className="h-auto w-full" />
