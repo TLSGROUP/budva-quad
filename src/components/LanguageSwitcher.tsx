@@ -1,5 +1,5 @@
 'use client';
-import '/node_modules/flag-icons/css/flag-icons.min.css'
+import 'flag-icons/css/flag-icons.min.css'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 

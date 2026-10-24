@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Requires Node.js 20.9 or newer. Install the locked dependencies with `npm ci`.
+
 First, run the development server:
 
 ```bash
@@ -15,6 +17,18 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Before releasing, run `npm run lint`, `npm run typecheck`, and `npm run build`.
+Next.js 16 runs linting separately from the production build.
+
+The `postcss-selector-parser` override keeps Tailwind CSS 3 and `postcss-nested`
+on the patched 7.1.7 parser (GHSA-rj75-hqrm-r3gf). Remove the override when their
+dependency ranges include the fixed version. The generated site CSS was checked
+to be identical before and after this parser update.
+
+Social preview URLs use `https://www.budvaquad.me` as their metadata base.
+Vercel Analytics and Speed Insights load only when `VERCEL=1`, so local and
+self-hosted runs do not request unavailable Vercel endpoints.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

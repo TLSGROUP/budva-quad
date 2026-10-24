@@ -7,6 +7,7 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.budvaquad.me"),
   title: {
     default: "ATV/BUDVA QUAD ADVENTURES",
     template: "%s - BUDVA QUAD ADVENTURES",
@@ -115,8 +116,12 @@ export default async function RootLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
-          <Analytics />
-          <SpeedInsights />
+          {process.env.VERCEL === "1" && (
+            <>
+              <Analytics />
+              <SpeedInsights />
+            </>
+          )}
         </NextIntlClientProvider>
       </body>
     </html>
